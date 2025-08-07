@@ -110,6 +110,13 @@ header img {
 #article-content h2.profil {
   font-weight: 700;
 }
+#article-content h2 a {
+  margin-left: 4px;
+}
+#article-content h2 a i {
+  color: #DC3C22;
+  font-size: 28px;
+}
 @media screen and (max-width: 768px) {
   #article-content h2 {
     font-size: 20px;

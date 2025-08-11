@@ -127,18 +127,21 @@ header img {
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 1vh;
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
 }
 #article-content img.profile_muradi {
   width: 100%;
-  margin-bottom: 10px;
 }
 #article-content img.monumen {
   width: 90%;
-  margin-bottom: 10px;
 }
 #article-content img.jalan_muradi {
   width: 90%;
-  margin-bottom: 10px;
+}
+#article-content img:hover {
+  transform: scale(1.015);
+  transform-origin: center center;
 }
 #article-content p {
   text-align: justify;
@@ -193,7 +196,7 @@ header img {
 div#logos {
   height: 150px;
   position: fixed;
-  top: 73vh;
+  bottom: 7%;
   right: 0px;
   padding-right: 15px;
   display: flex;
@@ -225,7 +228,7 @@ div#logos div.hide-show i {
 }
 @media screen and (max-width: 768px) {
   div#logos {
-    top: 62vh;
+    bottom: 15%;
     right: -48px;
     background-color: rgba(223, 217, 223, 0.85);
     padding: 5px 5px;
@@ -273,9 +276,13 @@ div#logos div#logo div.logo a img {
   width: 40px;
   aspect-ratio: 1/1;
   z-index: 10;
+  transition: transform 0.3s ease;
 }
 div#logos div#logo div.logo a img.kkn {
   margin-top: -5px;
+}
+div#logos div#logo div.logo a img:hover {
+  transform: scale(1.2);
 }
 div#logos div#logo div.logo a:hover p {
   opacity: 1;
